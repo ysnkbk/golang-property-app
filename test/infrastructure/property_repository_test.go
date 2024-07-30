@@ -21,8 +21,8 @@ func TestMain(m *testing.M) {
 	dbPool = postgresql.GetConnectionPool(ctx, postgresql.Config{
 		Host:                  "localhost",
 		Port:                  "5433",
-		UserName:              "kirmac",
-		Password:              "kirmac123",
+		UserName:              "",
+		Password:              "",
 		DbName:                "kirmac_site",
 		MaxConnections:        "10",
 		MaxConnectionIdleTime: "30s",
